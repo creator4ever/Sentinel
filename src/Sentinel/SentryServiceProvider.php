@@ -47,8 +47,8 @@ class SentryServiceProvider extends ServiceProvider {
     public function __construct($app)
     {
         parent::__construct($app);
-        $this->redirect = $this->app->make('redirect');
-        $this->session  = $this->app->make('session');
+        //$this->redirect = $this->app->make('redirect');
+        //$this->session  = $this->app->make('session');
     }
 
     /**
