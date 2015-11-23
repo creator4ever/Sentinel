@@ -47,8 +47,6 @@ class SentryServiceProvider extends ServiceProvider {
     public function __construct($app)
     {
         parent::__construct($app);
-        //$this->redirect = $this->app->make('redirect');
-        //$this->session  = $this->app->make('session');
     }
 
     /**
@@ -58,6 +56,8 @@ class SentryServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
+        $this->redirect = $this->app->make('redirect');
+        $this->session  = $this->app->make('session');
         //$this->package('cartalyst/sentry', 'cartalyst/sentry');
     }
 
